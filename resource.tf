@@ -4,6 +4,13 @@ type = string
 default = "us-east-1"
 }
 
+
+variable "vpc_id" {
+  description = "ID of the existing VPC to use"
+  type        = string
+}
+
+
 variable "vpc_cidr" {
 description  = "CIDR block for VPC"
 type  = string
